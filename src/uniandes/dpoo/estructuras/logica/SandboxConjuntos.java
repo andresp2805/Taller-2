@@ -101,7 +101,8 @@ public class SandboxConjuntos
     public Collection<String> getSiguientes(String cadena) 
     {
         List<String> respuesta = new ArrayList<>();
-        for (String str : arbolCadenas) {
+        for (String str : arbolCadenas) 
+        {
             if (str.compareTo(cadena) >= 0) 
             {
                 respuesta.add(str);
