@@ -102,7 +102,8 @@ public class SandboxConjuntos
     {
         List<String> respuesta = new ArrayList<>();
         for (String str : arbolCadenas) {
-            if (str.compareTo(cadena) >= 0) {
+            if (str.compareTo(cadena) >= 0) 
+            {
                 respuesta.add(str);
             }
         }
@@ -216,7 +217,9 @@ public class SandboxConjuntos
     	for (int i = 0; i < otroArreglo.length; i++)
     	{
     		if(!arbolCadenas.contains(otroArreglo[i]))
+    		{
     			return false;
+    		}
     	}
         return true;
     }
