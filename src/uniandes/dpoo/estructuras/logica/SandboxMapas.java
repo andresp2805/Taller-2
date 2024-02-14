@@ -42,7 +42,7 @@ public class SandboxMapas
      */
     public List<String> getValoresComoLista( )
     {
-    	List<String> listaValores = new ArrayList<>(mapaCadenas.values());
+    	List<String> listaValores = new ArrayList<String>(mapaCadenas.values());
         listaValores.sort((o1, o2) -> o1.compareTo(o2));
         return listaValores;
     }
@@ -53,7 +53,7 @@ public class SandboxMapas
      */
     public List<String> getLlavesComoListaInvertida( )
     {
-    	List<String> listaLlaves = new ArrayList<>(mapaCadenas.keySet());
+    	List<String> listaLlaves = new ArrayList<String>(mapaCadenas.keySet());
     	listaLlaves.sort((o1, o2) -> o2.compareTo(o1));
         return listaLlaves;
     }
